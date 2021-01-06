@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ll1">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/addVehicleToolBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#3A6DFB">
+
+                <ImageView
+                    android:id="@+id/ivBackErrow"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/back_errow" />
+
+                <TextView
+                    android:id="@+id/tvManageVehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:padding="5dp"
+                    android:text="Add Vehicle"
+                    android:textColor="@color/White"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+
+                    />
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civProfile"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/transporter_logo"
+            app:civ_border_color="@color/colorBlack"
+            app:civ_border_width="1dp"
+            android:layout_below="@+id/ll1"/>
+
+        <EditText
+            android:id="@+id/etVehicleType"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditTextTheme"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:hint="Vehicle type"
+            android:layout_below="@+id/civProfile"
+            android:background="@drawable/edittext_decorator"
+            />
+
+        <EditText
+            android:id="@+id/etvehicleCount"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:theme="@style/EditTextTheme"
+            android:hint="Vehicle Count"
+            android:layout_below="@id/etVehicleType"
+            android:textColorHint="@color/colorBlack"
+            android:background="@drawable/edittext_decorator"
+            />
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Done"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/etvehicleCount"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_decorator"
+            />
+    </RelativeLayout>
+
+</ScrollView>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<ScrollView android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:fillViewport="true"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--<RelativeLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    >-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/LL1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/tbToolBar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:background="#3A6DFB">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/ivBackErroe"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:src="@drawable/back_errow" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvManageVehicle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:padding="5dp"-->
+<!--                android:text="Add Vehicle"-->
+<!--                android:textColor="@color/White"-->
+<!--                android:textSize="25sp"-->
+<!--                android:textStyle="bold"-->
+<!--                />-->
+<!--        </androidx.appcompat.widget.Toolbar>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ll2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_below="@+id/ll1"-->
+<!--        >-->
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:id="@+id/civProfile"-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="180dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:src="@drawable/transporter_logo"-->
+<!--            app:civ_border_color="@color/colorBlack"-->
+<!--            app:civ_border_width="1dp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/etVehicleType"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:theme="@style/EditTextTheme"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:hint="Vehicle type"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:gravity="center"-->
+<!--            android:background="@drawable/edittext_decorator"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColorHint="@color/black"-->
+<!--            android:textStyle="bold" />-->
+<!--    <EditText-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:hint="Vehicle count"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:background="@drawable/edittext_decorator"-->
+<!--        android:padding="10dp"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColorHint="@color/black"/>-->
+<!--    <Button-->
+<!--        android:id="@+id/btnDone"-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="110dp"-->
+<!--        android:layout_marginBottom="62dp"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:layout_marginEnd="110dp"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:text="Add Vehicle"-->
+<!--        android:background="@drawable/button_decorator"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="10dp"-->
+<!--        android:textStyle="bold"-->
+<!--        />-->
+<!--</LinearLayout>-->
+<!--</RelativeLayout>-->
+<!--</ScrollView>-->

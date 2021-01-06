@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Transporter Vendor</string>
+    <string-array name="TransporterCategory">
+        <item>Select category</item>
+        <item>Transporter company</item>
+        <item>Truck owner</item>
+        <item>Packer and movers</item>
+    </string-array>
+<string name="empty_directory">Empty Directory</string>
+<string name="storage_removed">Storage was removed or unmounted.</string>
+<string name="choose_file">Select a file</string>
+<string name="error_selecting_file">Error selecting File</string>
+<string name="internal_storage">Internal storage</string>
+    <color name="black">#000000</color>
 </resources>

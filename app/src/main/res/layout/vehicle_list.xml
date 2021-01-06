@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+  <LinearLayout
+      android:id="@+id/llVehicleList"
+      android:layout_width="match_parent"
+      android:layout_height="90dp"
+      android:layout_marginTop="5dp"
+      android:elevation="20dp"
+      >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivVehicle"
+        android:layout_width="60dp"
+        android:layout_gravity="center"
+        android:layout_height="60dp"
+        android:src="@drawable/transporter_logo" />
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/ivVehicle"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        >
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Vehicle type"
+          android:textSize="18sp"
+          android:padding="5dp"
+          android:textColor="@color/black"
+          android:layout_gravity="center_vertical"
+          android:layout_marginTop="5dp"
+          android:id="@+id/tvVehicleName"
+          />
+      <LinearLayout
+          android:id="@+id/linearLayoutVehicle"
+          android:layout_marginTop="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="5dp"
+          android:orientation="horizontal"
+          android:weightSum="1">
+        <TextView
+            android:id="@+id/tvVehicleNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Number Of Vehicles:-"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_weight="0.8"
+            />
+        <TextView
+            android:id="@+id/tvVehicleCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="0.2"
+
+            />
+      </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivMoreVert"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/more_verticle_dots" />
+  </LinearLayout>
+  <View
+      android:layout_width="wrap_content"
+      android:layout_height="1dp"
+      android:background="@color/black"/>
+
+</LinearLayout>
+</ScrollView>
+
